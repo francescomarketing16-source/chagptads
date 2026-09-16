@@ -274,6 +274,17 @@ src="https://www.facebook.com/tr?id=1378684614418725&ev=PageView&noscript=1"
 
   /* ============ INLINE CTA (ripetuto sotto ogni sezione) ============ */
   .section-cta{margin-top:40px;}
+  .section-cta a{
+    display:inline-flex;align-items:center;gap:8px;
+    font-family:'Space Grotesk',sans-serif;
+    font-weight:700;font-size:17px;
+    color:var(--accent);
+    text-decoration:none;
+    border-bottom:1.5px solid var(--accent);
+    padding-bottom:3px;
+    transition:gap .3s var(--ease-spring), color .3s var(--ease), border-color .3s var(--ease);
+  }
+  .section-cta a:hover{gap:13px;color:#fff;border-color:#fff;}
 
   /* ============ FINAL CTA + FORM ============ */
   .final{
@@ -372,6 +383,7 @@ src="https://www.facebook.com/tr?id=1378684614418725&ev=PageView&noscript=1"
   section.light-section .letter em{color:#5C5648;}
   section.light-section .divider-line{background:#B8590A;}
   section.light-section .section-cta a{color:#9A5B0A; border-bottom-color:#9A5B0A;}
+  section.light-section .section-cta a:hover{color:#14110C; border-bottom-color:#14110C;}
   section.light-section .letter .drop{color:#6B6255;}
   section.light-section .letter p.signature{color:#14110C;}
   .divider-line{width:60px; height:2px; background:var(--accent); margin:40px auto;}
