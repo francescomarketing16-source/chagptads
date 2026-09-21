@@ -508,7 +508,7 @@ src="https://www.facebook.com/tr?id=1378684614418725&ev=PageView&noscript=1"
     <p class="p">La finestra di tempo esatta in cui conviene entrare per essere in anticipo senza sprecare budget, la strategia per la tua zona e cosa evitare nelle prime settimane.</p>
     <div class="qualifier">Solo per imprenditori con fatturato superiore a 70.000€/anno</div>
     <div class="form-bezel">
-      <form class="form-core" id="leadform" name="lead-chatgpt-ads" action="https://formspree.io/f/xoeabgpl" method="POST" onsubmit="fbq('track', 'Lead'); fetch('https://ntfy.sh/actimkt-lead-9q3fk7xz2p', {method:'POST', body:'Nuovo lead sulla landing ChatGPT Ads!', headers:{'Title':'Nuovo contatto 🔔','Priority':'urgent'}});">
+      <form class="form-core" id="leadform" name="lead-chatgpt-ads" action="https://formspree.io/f/xoeabgpl" method="POST" onsubmit="fbq('track', 'Lead'); sendLeadNotification();">
         <p class="honeypot"><label>Non compilare: <input type="text" name="_gotcha"></label></p>
 
         <div class="field">
@@ -556,6 +556,14 @@ src="https://www.facebook.com/tr?id=1378684614418725&ev=PageView&noscript=1"
 <footer>ACTIMARKETING · CHATGPT ADS ITALIA 2026</footer>
 
 <script>
+function sendLeadNotification(){
+  fetch('https://ntfy.sh/actimkt-lead-9q3fk7xz2p', {
+    method: 'POST',
+    body: 'Nuovo lead sulla landing ChatGPT Ads!',
+    headers: { 'Title': 'Nuovo contatto', 'Priority': 'urgent' },
+    keepalive: true
+  }).catch(function(){});
+}
 (function(){
   var sticky = document.getElementById('stickyCta'),
       hero = document.querySelector('.hero'),
