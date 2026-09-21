@@ -19,7 +19,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 
 <!-- Meta Pixel Code -->
 <script>
@@ -57,7 +57,7 @@ src="https://www.facebook.com/tr?id=1378684614418725&ev=PageView&noscript=1"
   *{box-sizing:border-box;margin:0;padding:0;}
   html{scroll-behavior:smooth;}
   body{
-    font-family:'Source Serif 4',Georgia,'Times New Roman',serif;
+    font-family:'Plus Jakarta Sans',sans-serif;
     background:var(--ink);
     color:var(--paper);
     line-height:1.6;
@@ -274,17 +274,6 @@ src="https://www.facebook.com/tr?id=1378684614418725&ev=PageView&noscript=1"
 
   /* ============ INLINE CTA (ripetuto sotto ogni sezione) ============ */
   .section-cta{margin-top:40px;}
-  .section-cta a{
-    display:inline-flex;align-items:center;gap:8px;
-    font-family:'Space Grotesk',sans-serif;
-    font-weight:700;font-size:17px;
-    color:var(--accent);
-    text-decoration:none;
-    border-bottom:1.5px solid var(--accent);
-    padding-bottom:3px;
-    transition:gap .3s var(--ease-spring), color .3s var(--ease), border-color .3s var(--ease);
-  }
-  .section-cta a:hover{gap:13px;color:#fff;border-color:#fff;}
 
   /* ============ FINAL CTA + FORM ============ */
   .final{
@@ -312,8 +301,8 @@ src="https://www.facebook.com/tr?id=1378684614418725&ev=PageView&noscript=1"
     padding:30px 28px;
     box-shadow:inset 0 1px 0 rgba(255,255,255,0.06);
   }
-  .field{margin-bottom:22px;}
-  .field.row2{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+  .field{margin-bottom:18px;}
+  .field.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
   .field label{
     display:block;font-size:13px;font-weight:600;color:var(--paper);
     margin-bottom:8px;letter-spacing:0.01em;
@@ -324,7 +313,7 @@ src="https://www.facebook.com/tr?id=1378684614418725&ev=PageView&noscript=1"
     border:1px solid var(--line-strong);
     border-radius:12px;
     color:var(--paper);
-    font-family:'Source Serif 4',Georgia,'Times New Roman',serif;
+    font-family:'Plus Jakarta Sans',sans-serif;
     font-size:15px;
     padding:13px 16px;
     outline:none;
@@ -365,119 +354,161 @@ src="https://www.facebook.com/tr?id=1378684614418725&ev=PageView&noscript=1"
     .sticky-cta{transition:none;}
     html{scroll-behavior:auto;}
   }
-<style>
-  .letter{max-width:640px; margin:0 auto;}
-  .letter p{font-size:17px; color:#E8E9F0; margin-bottom:20px; line-height:1.8;}
-  .letter p.signature{color:var(--paper); font-style:italic; margin-top:36px;}
-  .letter .drop{font-size:15px; color:var(--paper); font-family:'JetBrains Mono',monospace; margin-bottom:8px;}
-  .letter strong{color:#fff;}
-  .letter u{color:var(--accent); text-decoration-color:rgba(245,165,36,0.5);}
-  .letter .num-inline{color:var(--accent); font-weight:700;}
-
-  /* ============ SEZIONE STORIA — SFONDO CHIARO ============ */
-  section.light-section{background:#F7F3EC;}
-  section.light-section .letter p{color:#3A3630;}
-  section.light-section .letter strong{color:#14110C;}
-  section.light-section .letter u{color:#9A5B0A; text-decoration-color:rgba(154,91,10,0.4);}
-  section.light-section .letter .num-inline{color:#B8590A;}
-  section.light-section .letter em{color:#5C5648;}
-  section.light-section .divider-line{background:#B8590A;}
-  section.light-section .section-cta a{color:#9A5B0A; border-bottom-color:#9A5B0A;}
-  section.light-section .section-cta a:hover{color:#14110C; border-bottom-color:#14110C;}
-  section.light-section .letter .drop{color:#6B6255;}
-  section.light-section .letter p.signature{color:#14110C;}
-  .divider-line{width:60px; height:2px; background:var(--accent); margin:40px auto;}
 </style>
 </head>
 <body>
 
-<!-- ============ HERO — LETTERA ============ -->
+<!-- ============ HERO ============ -->
 <header class="hero">
-  <div class="wrap letter">
-    <p class="drop" style="font-style:italic;">Milano, 15 settembre, ore 8:47 — Francesco Paolino</p>
-    <h1 style="font-size:clamp(28px,4.2vw,40px);">Non so se hai già sentito parlare di ChatGPT Ads.<br><span class="hl">Chi entra prima paga la metà.</span></h1>
-    <p style="margin-top:24px;">Seguo da mesi l'apertura della pubblicità dentro ChatGPT — prima negli Stati Uniti, poi in Inghilterra, e da poco anche qui in Italia. Ti scrivo perché ho visto <u>un numero che mi ha fatto fermare</u>. E riguarda il settore immobiliare.</p>
-    <div class="cta-row" style="margin-top:8px;">
+  <div class="wrap">
+    <p class="pre-eyebrow"><em><u>Per Agenti Immobiliari, Infissi, Costruzioni</u></em></p>
+    <h1>ChatGPT Ads è arrivato in Italia.<br><span class="hl">Chi entra prima, paga la metà.</span></h1>
+    <p class="sub">Negli USA il costo si è dimezzato in 9 settimane. Per l'immobiliare sta già battendo Google. Scopri il momento giusto per partire senza bruciare budget.</p>
+    <div class="cta-row">
       <a href="#contatto" class="cta">Scopri ChatGPT Ads <span class="arrow">&rarr;</span></a>
-      <a href="#storia" class="ghost-link">Continua a leggere</a>
+      <a href="#dati" class="ghost-link">Guarda i dati USA</a>
+    </div>
+
+    <div class="bezel">
+      <div class="bezel-core">
+        <div class="chart-head">
+          <span class="t">Il costo di aspettare · dati USA 2026</span>
+          <span class="v">-58% in 9 settimane</span>
+        </div>
+        <svg viewBox="0 0 860 250" width="100%" height="auto" role="img" aria-label="Il costo per farsi notare scende da 60 a 25 dollari in 9 settimane: la finestra migliore sono le prime settimane">
+          <rect x="55" y="40" width="215" height="160" fill="rgba(245,165,36,0.07)" stroke="rgba(245,165,36,0.3)" stroke-width="1" rx="6"/>
+          <text x="162" y="28" fill="#F5A524" font-family="JetBrains Mono" font-size="12" font-weight="700" text-anchor="middle">FINESTRA MIGLIORE</text>
+          <line x1="38" y1="40" x2="38" y2="200" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+          <line x1="38" y1="200" x2="822" y2="200" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+          <text x="6" y="52" fill="#9A9CAD" font-family="JetBrains Mono" font-size="11">$60</text>
+          <text x="6" y="128" fill="#9A9CAD" font-family="JetBrains Mono" font-size="11">$40</text>
+          <text x="12" y="204" fill="#9A9CAD" font-family="JetBrains Mono" font-size="11">$0</text>
+          <polyline points="58,52 180,76 300,104 420,128 540,148 660,161 782,168" fill="none" stroke="#F5A524" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="58" cy="52" r="5" fill="#F5A524"/>
+          <text x="58" y="232" fill="#F5A524" font-family="JetBrains Mono" font-size="12" font-weight="700" text-anchor="middle">TU SEI QUI</text>
+          <circle cx="782" cy="168" r="5" fill="#9A9CAD"/>
+          <text x="770" y="232" fill="#9A9CAD" font-family="JetBrains Mono" font-size="12" text-anchor="middle">9 SETTIMANE DOPO</text>
+        </svg>
+        <p class="chart-note">Ogni settimana in più, farsi notare costa di più. <em>La stessa curva di Google e Facebook agli esordi.</em></p>
+      </div>
     </div>
   </div>
 </header>
 
-<!-- ============ LA STORIA ============ -->
-<section id="storia" class="light-section">
-  <div class="wrap letter">
-    <p><strong>A Denver</strong>, un agente immobiliare ha pagato <span class="num-inline">3-5 dollari</span> per un click dentro ChatGPT. Lo stesso identico click, sulla stessa identica ricerca, su Google gli sarebbe costato tra <span class="num-inline">8 e 25 dollari</span>.</p>
-    <p>Non è un errore di battitura, e non è nemmeno più un caso isolato — <u>è il prezzo che OpenAI stessa ha fissato ufficialmente per il settore immobiliare</u>. <strong>Un terzo del costo</strong>, per lo stesso identico cliente.</p>
-    <p>La prima volta che l'ho letto, la mia reazione è stata: <em>"o è un'anomalia temporanea, o è un'occasione che capita una volta ogni dieci anni."</em> Ho passato i mesi successivi a capire quale delle due fosse vera.</p>
-
-    <div class="divider-line"></div>
-
-    <p><strong>È evidente agli occhi di tutti</strong>: su Google e Facebook, oggi, competi con centinaia di altri agenti nella tua zona — è una guerra di prezzo che si combatte da anni, e i costi salgono ogni anno che passa. Su ChatGPT Ads, in questo momento, <u>la concorrenza è quasi assente</u>. Non perché la piattaforma sia perfetta — è nuova, cambia ogni due settimane, e chi non la segue da vicino rischia di sprecare budget su un errore che si sarebbe potuto evitare.</p>
-    <p>Ma proprio per questo, chi entra ora — <em>con la strategia giusta</em> — parte con un vantaggio che chi arriverà tra qualche mese non avrà più.</p>
-
+<!-- ============ DATI ============ -->
+<section id="dati">
+  <div class="wrap">
+    <h2 class="stats-title">Non è una promessa. Negli USA è già successo.</h2>
+    <p class="lead">Tre numeri, tutti pubblici. Un caso concreto: a Denver, un agente immobiliare ha pagato 3-5$ per click, contro 8-25$ per la stessa identica ricerca su Google — stesso cliente, un terzo del prezzo.</p>
+    <div class="stat-grid">
+      <div class="stat"><span class="num">-58%</span><span class="lbl">Costo per farsi notare, sceso in 9 settimane dal lancio USA</span></div>
+      <div class="stat"><span class="num">$3-5</span><span class="lbl">Costo per click nell'immobiliare, contro $8-25 di Google sulle stesse ricerche</span></div>
+      <div class="stat"><span class="num">100M$</span><span class="lbl">Fatturato pubblicitario annualizzato raggiunto in sole 9 settimane</span></div>
+    </div>
     <div class="section-cta"><a href="#contatto" class="ghost-link">Scopri ChatGPT Ads →</a></div>
   </div>
 </section>
 
-<!-- ============ PERCHÉ TE LO DICO ORA ============ -->
-<section class="sec-alt">
-  <div class="wrap letter">
-    <p class="drop"><em><u>Perché te lo scrivo proprio ora?</u></em></p>
-    <p>Non sei il primo a cui lo racconto. <strong>Sto già parlando con altre agenzie immobiliari italiane</strong> di questo stesso canale, e resto in contatto con chi segue da vicino il suo sviluppo anche fuori dall'Europa — <u>persone che vedono i numeri prima che diventino pubblici</u>.</p>
-    <p>La finestra per muoversi con questo vantaggio di costo <em>non è infinita</em>. Non so dirti se durerà tre mesi o sei — nessuno può saperlo con certezza, e diffiderei di chi te lo promette come fosse un fatto. Quello che so è che <strong>si sta già restringendo</strong>, un po' di più ogni settimana che passa.</p>
-
-    <div class="divider-line"></div>
-
-    <p><strong>Cosa serve per muoversi bene, non alla cieca</strong>: capire il momento esatto in cui attivare la prima campagna (<u>troppo presto e la piattaforma non è pronta, troppo tardi e il costo è già salito</u>), e monitorare una piattaforma che cambia regole ogni due settimane — cosa che, onestamente, un'agenzia immobiliare non ha tempo di fare mentre gestisce visite, trattative e clienti veri.</p>
-    <p><em>È esattamente il lavoro che faccio io.</em></p>
-
-    <div class="section-cta"><a href="#contatto" class="ghost-link">Scopri ChatGPT Ads →</a></div>
-  </div>
-</section>
-
-<!-- ============ CHI SONO ============ -->
-<section class="light-section">
-  <div class="wrap letter">
-    <p class="drop">Chi ti scrive</p>
-    <p><strong>ActiMarketing</strong>, 7 anni di attività. Alcuni risultati verificabili: <u>vendite raddoppiate</u> nelle festività per un'azienda da oltre 1M€ di fatturato annuo, <u>20.000€ generati da 3.000€</u> di investimento pubblicitario per un altro cliente, oltre 150 inserzioni pubblicitarie gestite con recensioni pubbliche a supporto.</p>
-    <p>Non ti scrivo per convincerti con un curriculum — te lo scrivo perché quando ci sentiremo, <em>se ci sentiremo</em>, voglio che tu sappia <u>con chi stai parlando</u>.</p>
-
-    <p class="signature">— Francesco</p>
-
-    <div class="section-cta"><a href="#contatto" class="ghost-link">Scopri ChatGPT Ads →</a></div>
-  </div>
-</section>
-
-<!-- ============ FAQ (riusate identiche) ============ -->
+<!-- ============ PERCHÉ ORA ============ -->
 <section class="sec-alt">
   <div class="wrap">
-    <h2 class="proof-head" style="text-align:center;">Prima di scriverci, probabilmente ti chiedi</h2>
+    <div class="split">
+      <div>
+        <h2>Su Google competi con centinaia di agenti. Qui, oggi, quasi con nessuno.</h2>
+        <p>Chi chiede a ChatGPT di una casa o di una ristrutturazione è già vicino alla decisione, non sta curiosando. Per un'agenzia immobiliare, pagare un terzo per lo stesso contatto fa una differenza enorme nel tempo.</p>
+        <p>Il vantaggio però ha una scadenza: <strong>vale solo finché la concorrenza non arriva.</strong></p>
+      </div>
+      <div class="edge-list">
+        <div class="edge-item"><h3>Il momento esatto per partire</h3><p>Troppo presto e la piattaforma non è ancora pronta. Troppo tardi e il costo è già salito. La finestra si misura in settimane, non in mesi.</p></div>
+        <div class="edge-item"><h3>Non sei solo a scoprirlo</h3><p>Stiamo già parlando con altre agenzie immobiliari italiane di questo canale, e restiamo in contatto con chi segue da vicino il suo sviluppo anche fuori dall'Europa.</p></div>
+        <div class="edge-item"><h3>Una piattaforma che cambia ogni 2 settimane</h3><p>Le regole di ChatGPT Ads si aggiornano di continuo. Senza monitorarla da vicino, il rischio è partire con informazioni già superate — e sprecare budget per questo.</p></div>
+      </div>
+    </div>
+    <div class="section-cta"><a href="#contatto" class="ghost-link">Scopri ChatGPT Ads →</a></div>
+  </div>
+</section>
+
+<!-- ============ CHI C'È DIETRO ============ -->
+<section>
+  <div class="wrap">
+    <h2 class="proof-head">ActiMarketing. 7 anni di risultati verificabili.</h2>
+    <p class="proof-sub">Francesco Paolino, founder. Alcuni risultati ottenuti per clienti reali:</p>
+    <div class="proof-grid">
+      <div class="proof"><span class="num">+120%</span><p>Vendite nelle festività per un'azienda storica da oltre 1M€ di fatturato annuo</p></div>
+      <div class="proof"><span class="num">20.000€ da 3.000€</span><p>Ritorno sulla vendita di un corso online per una community da 40.000+ iscritti</p></div>
+      <div class="proof"><span class="num">30+</span><p>Siti realizzati per clienti reali, con recensioni verificabili</p></div>
+    </div>
+    <div class="section-cta"><a href="#contatto" class="ghost-link">Scopri ChatGPT Ads →</a></div>
+  </div>
+</section>
+
+<!-- ============ VIDEO ============ -->
+<section class="sec-alt">
+  <div class="wrap">
+    <h2 class="proof-head">Non prendere la nostra parola. Ascolta la loro.</h2>
+    <p class="proof-sub">5 clienti reali raccontano cosa è cambiato prima e dopo aver lavorato con noi.</p>
+    <div class="video-grid">
+      <div class="video-slot">
+        <iframe class="video-embed" src="https://www.youtube-nocookie.com/embed/rdvfwKMV3OA" title="David Venara - Expanda" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+        <div class="video-caption"><div class="name">David Venara</div><div class="role">Founder, Expanda</div></div>
+      </div>
+      <div class="video-slot">
+        <iframe class="video-embed" src="https://www.youtube-nocookie.com/embed/4y9-TbCLvIg" title="Rosa Maria - Fisioterapista" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+        <div class="video-caption"><div class="name">Rosa Maria</div><div class="role">Fisioterapista, Bari</div></div>
+      </div>
+      <div class="video-slot">
+        <iframe class="video-embed" src="https://www.youtube-nocookie.com/embed/vVNTja3GJn4" title="Cristina Del Greco - Operatrice del benessere" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+        <div class="video-caption"><div class="name">Cristina Del Greco</div><div class="role">Operatrice del benessere</div></div>
+      </div>
+    </div>
+    <div class="video-row2">
+      <div class="video-slot">
+        <iframe class="video-embed" src="https://www.youtube-nocookie.com/embed/lXtOKqKGRx8" title="Andrea Casadio - Pasticceria Silvano e Valentino" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+        <div class="video-caption"><div class="name">Andrea Casadio</div><div class="role">Pasticceria Silvano e Valentino</div></div>
+      </div>
+      <div class="video-slot">
+        <iframe class="video-embed" src="https://www.youtube-nocookie.com/embed/xTGpPycphII" title="Erin O'Connor - Massage Therapist" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+        <div class="video-caption"><div class="name">Erin O'Connor</div><div class="role">Massage Therapist, USA</div></div>
+      </div>
+    </div>
+    <div class="section-cta"><a href="#contatto" class="ghost-link">Scopri ChatGPT Ads →</a></div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section>
+  <div class="wrap">
+    <h2 class="proof-head" style="text-align:center;">Le domande che fanno tutti</h2>
     <div class="faq">
       <details>
         <summary>Ho già Google e Meta, mi serve davvero anche questo? <span class="plus">+</span></summary>
-        <p class="ans">Non li sostituisce, li affianca. Su quelli competi già con centinaia di agenti. Qui, oggi, quasi nessuno.</p>
+        <p class="ans">Non li sostituisce, li affianca. Lì competi già con centinaia di agenti nella tua zona. Qui, oggi, quasi nessuno.</p>
       </details>
       <details>
-        <summary>È troppo presto, meglio aspettare che si stabilizzi? <span class="plus">+</span></summary>
-        <p class="ans">È l'opposto di quello che i dati suggeriscono: il costo sale con la concorrenza, non scende con l'attesa.</p>
+        <summary>Non è troppo presto? Meglio aspettare che si stabilizzi? <span class="plus">+</span></summary>
+        <p class="ans">I dati dicono l'opposto: il costo sale man mano che il mercato si affolla. Aspettare sposta il vantaggio a chi si muove prima di te.</p>
       </details>
       <details>
-        <summary>Perché non lo faccio da solo? <span class="plus">+</span></summary>
-        <p class="ans">Puoi farlo. Il rischio è muoverti nel momento sbagliato su una piattaforma che cambia ogni due settimane — è la parte in cui seguirla da vicino fa la differenza.</p>
+        <summary>Come faccio a sapere se funziona per la mia zona specifica? <span class="plus">+</span></summary>
+        <p class="ans">Se ne parla nella consulenza: valutiamo insieme il contesto della tua zona e decidiamo se e quando ha senso partire.</p>
+      </details>
+      <details>
+        <summary>Perché non farlo da solo? <span class="plus">+</span></summary>
+        <p class="ans">Puoi. Il rischio è muoverti nel momento sbagliato su una piattaforma che cambia ogni settimana. La consulenza serve esattamente a evitarlo.</p>
       </details>
     </div>
     <div class="section-cta" style="text-align:center;"><a href="#contatto" class="ghost-link">Scopri ChatGPT Ads →</a></div>
   </div>
 </section>
 
+<!-- ============ FINAL CTA ============ -->
 <section class="final" id="contatto">
   <div class="wrap">
-    <h2>30 minuti per capire quando parte, e come muoverti prima degli altri.</h2>
-    <p class="p">La finestra di tempo esatta in cui conviene entrare per essere in anticipo <strong>senza sprecare budget</strong>, la strategia per la tua zona e cosa evitare nelle prime settimane.</p>
-    <div class="qualifier">Esclusivo per imprenditori con fatturato superiore a 70.000€/anno</div>
+    <h2>30 minuti per capire come muoverti prima degli altri.</h2>
+    <p class="p">La finestra di tempo esatta in cui conviene entrare per essere in anticipo senza sprecare budget, la strategia per la tua zona e cosa evitare nelle prime settimane.</p>
+    <div class="qualifier">Solo per imprenditori con fatturato superiore a 70.000€/anno</div>
     <div class="form-bezel">
-      <form class="form-core" id="leadform" name="lead-chatgpt-ads" action="https://formspree.io/f/xoeabgpl" method="POST" onsubmit="fbq('track', 'Lead');">
+      <form class="form-core" id="leadform" name="lead-chatgpt-ads" action="https://formspree.io/f/xoeabgpl" method="POST" onsubmit="fbq('track', 'Lead'); fetch('https://ntfy.sh/actimkt-lead-9q3fk7xz2p', {method:'POST', body:'Nuovo lead sulla landing ChatGPT Ads!', headers:{'Title':'Nuovo contatto 🔔','Priority':'urgent'}});">
         <p class="honeypot"><label>Non compilare: <input type="text" name="_gotcha"></label></p>
 
         <div class="field">
